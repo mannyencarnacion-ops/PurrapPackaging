@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Get a Free Proof & Quote | Purrap Packaging</title>
 <meta name="description" content="Request a free digital proof and bulk quote on custom restaurant packaging. We reply within 1 business day. New England delivery, first order free. Call/text 978-549-5979.">
 <link rel="canonical" href="https://purrappackaging.com/contact">
@@ -16,259 +17,106 @@
 <meta name="twitter:description" content="Request a free digital proof and bulk quote on custom restaurant packaging. We reply within 1 business day. New England delivery, first order free. Call/text 978-549-5979.">
 <meta name="twitter:image" content="https://purrappackaging.com/assets/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"ContactPage","name":"Get a Free Proof & Quote | Purrap Packaging","url":"https://purrappackaging.com/contact",
-  "about":{"@type":"Store","name":"Purrap Packaging","telephone":"+1-978-549-5979","email":"manny.encarnacion@purrappackaging.com"}
-}
+{"@context":"https://schema.org","@type":"ContactPage","name":"Get a Free Proof & Quote | Purrap Packaging","url":"https://purrappackaging.com/contact"}
 </script>
 </head>
 <body>
-<style>
-  .prp{--ink:#161616;--accent:#e8552d;--accent-dark:#c8431f;--muted:#6b6b6b;--line:#e6e3df;--bg:#fff;--soft:#faf7f4;
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .prp *{box-sizing:border-box}
-  .prp a{color:inherit;text-decoration:none}
-  .prp img{max-width:100%;display:block}
-  .prp .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-  .prp svg{display:block}
-
-  /* Announcement bar */
-  .prp-announce{background:var(--accent);color:#fff;text-align:center;font-size:.92rem;font-weight:600;padding:9px 16px;letter-spacing:.01em}
-  .prp-announce b{font-weight:800}
-
-  /* Header */
-  .prp-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
-  .prp-top{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1120px;margin:0 auto;padding:14px 28px}
-  .prp-brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em;color:#fff;font-size:1.18rem}
-  .prp-brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
-  .prp-brand .mark svg{width:20px;height:20px;fill:#fff}
-  .prp-brand small{display:block;font-size:.58rem;letter-spacing:.26em;color:#f0c3b2;font-weight:700;margin-top:1px}
-  .prp-right{display:flex;align-items:center;gap:22px}
-  .prp-phone{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;white-space:nowrap}
-  .prp-phone svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2}
-  .prp-phone span{display:block;font-size:.68rem;font-weight:500;color:#b9b9b9}
-  .prp-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer;transition:background .15s,transform .15s}
-  .prp-btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
-  .prp-btn svg{width:16px;height:16px;fill:currentColor}
-  .prp-nav{background:#000;border-top:1px solid #262626}
-  .prp-nav .wrap{display:flex;gap:26px;padding:11px 28px;font-size:.92rem}
-  .prp-nav a{color:#cfcfcf}
-  .prp-nav a:hover{color:#fff}
-
-  /* Hero */
-  .prp-pagehero{background:linear-gradient(180deg,var(--soft),#fff);padding:50px 0 24px;text-align:center}
-  .prp-eyebrow{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-weight:700;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-  .prp-eyebrow svg{width:13px;height:13px;fill:var(--accent)}
-  .prp-pagehero h1{font-size:2.35rem;margin:.25em 0 .2em;letter-spacing:-.01em}
-  .prp-pagehero p{color:#3a3a3a;max-width:54ch;margin:0 auto;font-size:1.05rem}
-
-  /* Layout */
-  .prp-layout{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;padding:34px 0 60px;align-items:start}
-
-  .prp-form{border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 16px 44px -28px rgba(0,0,0,.4);background:#fff}
-  .prp-formhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:4px}
-  .prp-formhead h2{font-size:1.35rem;margin:0}
-  .prp-formhead span{color:var(--muted);font-size:.85rem;white-space:nowrap}
-  .prp label{display:block;margin:16px 0 5px;font-weight:600;font-size:.95rem}
-  .prp label small{color:var(--muted);font-weight:500}
-  .prp input,.prp select,.prp textarea{width:100%;padding:12px;border:1px solid #cfccc7;border-radius:9px;font:inherit;background:#fff;color:var(--ink)}
-  .prp input:focus,.prp select:focus,.prp textarea:focus{outline:2px solid var(--accent);outline-offset:0;border-color:var(--accent)}
-  .prp .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .prp .more{display:none;border-top:1px dashed var(--line);margin-top:20px;padding-top:8px}
-  .prp .more.open{display:block}
-  .prp .toggle{margin-top:18px;background:none;border:0;color:var(--accent);font-weight:700;cursor:pointer;padding:0;font-size:.95rem;display:inline-flex;align-items:center;gap:6px}
-  .prp .toggle svg{width:15px;height:15px;stroke:var(--accent);fill:none;stroke-width:2}
-  .prp .submit{width:100%;justify-content:center;margin-top:20px;font-size:1.08rem;padding:14px}
-  .prp .reassure{margin-top:13px;color:var(--muted);font-size:.85rem;text-align:center;display:flex;align-items:center;justify-content:center;gap:7px}
-  .prp .reassure svg{width:14px;height:14px;stroke:var(--muted);fill:none;stroke-width:2}
-
-  .prp-aside .box{border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;background:#fff}
-  .prp-aside .box.soft{background:var(--soft)}
-  .prp-aside h3{margin:0 0 12px;font-size:1.08rem}
-  .prp-why{list-style:none;margin:0;padding:0}
-  .prp-why li{display:flex;gap:10px;align-items:flex-start;margin-bottom:11px;color:#333;font-size:.94rem}
-  .prp-why svg{flex:0 0 auto;width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2;margin-top:2px}
-  .prp-contact{margin:0 0 14px;font-size:.94rem}
-  .prp-contact b{display:block;margin-bottom:2px}
-  .prp-contact a{color:var(--accent);font-weight:600}
-  .prp-aside .box.soft p{margin:7px 0;font-size:.92rem}
-
-  .prp-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center}
-  .prp-footer a{color:var(--muted)}
-  .prp-footer a:hover{color:var(--accent)}
-  .prp-fineprint{margin-top:12px;font-size:.78rem;color:#9a9a9a}
-
-  @media(max-width:860px){
-    .prp-layout{grid-template-columns:1fr}
-    .prp .row{grid-template-columns:1fr}
-    .prp-pagehero h1{font-size:1.9rem}
-    .prp-right .prp-btn{display:none}
-    .prp-nav{display:none}
-  }
-</style>
-
-<div class="prp">
-
-  <div class="prp-announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
-
-  <header class="prp-header">
-    <div class="prp-top">
-      <a class="prp-brand" href="/">
-        <span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span>
-        <span>PURRAP<small>PACKAGING</small></span>
-      </a>
-      <div class="prp-right">
-        <a class="prp-phone" href="tel:9785495979">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span style="display:flex;flex-direction:column;line-height:1.1"><strong>Call/Text 978-549-5979</strong><span>Free proof in 1 business day</span></span>
-        </a>
-        <a class="prp-btn" href="/contact">Get My Free Proof</a>
-      </div>
+<a href="#main" class="skip">Skip to content</a>
+<div class="announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+    <nav class="nav-mid" id="nav" aria-label="Primary">
+      <a href="/">Home</a><a href="/catalog">Catalog</a><a href="/contact">Get a Quote</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:9785495979"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="txt"><strong>978-549-5979</strong><small>Free proof in 1 business day</small></span></a>
+      <a class="btn btn-primary" href="/contact">Get My Free Proof</a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
     </div>
-    <nav class="prp-nav"><div class="wrap">
-      <a href="/">Home</a>
-      <a href="/catalog">Catalog</a>
-      <a href="/contact">Get a Quote</a>
-    </div></nav>
-  </header>
-
-  <section class="prp-pagehero"><div class="wrap">
-    <span class="prp-eyebrow">
-      <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-      Get In Touch
-    </span>
-    <h1>Get Your Free Proof &amp; Quote</h1>
-    <p>Tell us what you need &mdash; we'll reply with pricing, samples, and a free digital proof within <b>1 business day</b>. New customers get their <b>first delivery free</b>. No obligation.</p>
+  </div>
+</header>
+<main id="main">
+  <section class="pagehero" style="text-align:center"><div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h1>Get your free proof &amp; quote</h1>
+    <p class="lead" style="margin:0 auto">Tell us what you need &mdash; we&rsquo;ll reply with pricing, samples, and a free digital proof within <b>1 business day</b>. New customers get their <b>first delivery free</b>. No obligation.</p>
   </div></section>
-
-  <div class="wrap prp-layout">
-
-    <form class="prp-form" action="/api/lead" method="POST" novalidate>
+  <section style="padding-top:24px"><div class="wrap contact-grid">
+    <form class="form-card lead-form" action="/api/lead" method="POST" novalidate aria-label="Request a free quote">
       <input type="hidden" name="_form" value="quote">
-      
-      <div class="prp-formhead">
-        <h2>Start your request</h2>
-        <span>Takes ~30 seconds</span>
-      </div>
-
-      <label>Your Name *</label>
-      <input type="text" name="name" required placeholder="Jane's Pizzeria">
-
+      <div class="form-head"><h2>Start your request</h2><span>Takes ~30 seconds</span></div>
+      <label for="name">Your Name *</label>
+      <input id="name" name="name" type="text" autocomplete="name" required placeholder="Jane's Pizzeria">
+      <span class="err">Please enter your name.</span>
       <div class="row">
-        <div>
-          <label>Email *</label>
-          <input type="email" name="email" required placeholder="you@restaurant.com">
-        </div>
-        <div>
-          <label>Phone</label>
-          <input type="tel" name="phone" placeholder="(978) 555-0123">
-        </div>
+        <div><label for="email">Email *</label><input id="email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@restaurant.com" spellcheck="false"><span class="err">Enter a valid email.</span></div>
+        <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(978) 555-0123"></div>
       </div>
-
-      <label>What do you need? *</label>
-      <select name="product" required>
+      <label for="product">What do you need? *</label>
+      <select id="product" name="product" required>
         <option value="">&mdash; Select a product &mdash;</option>
-        <option>Pizza Boxes</option>
-        <option>Brown Grocery Bags</option>
-        <option>Handle Bags</option>
-        <option>Sub Bags</option>
-        <option>Tri-Fold Menus</option>
-        <option>Multiple Products</option>
+        <option>Pizza Boxes</option><option>Brown Grocery Bags</option><option>Handle Bags</option>
+        <option>Sub Bags</option><option>Tri-Fold Menus</option><option>Multiple Products</option>
         <option>Not sure &mdash; help me decide</option>
       </select>
-
-      <button type="button" class="toggle" onclick="prpToggleMore(this)">
-        <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        <span>Add order details (optional, helps us quote faster)</span>
-      </button>
-
-      <div class="more" id="prpMore">
-        <label>Delivery State <small>(we focus on New England)</small></label>
-        <select name="state">
-          <option value="">&mdash; Select delivery state &mdash;</option>
-          <option>Massachusetts</option>
-          <option>New Hampshire</option>
-          <option>Rhode Island</option>
-          <option>Connecticut</option>
-          <option>Vermont</option>
-          <option>Maine</option>
-          <option>Outside New England</option>
-        </select>
-
-        <label>Estimated Quantity</label>
-        <input type="text" name="quantity" placeholder="e.g. 5,000 bags or 25 bundles">
-
-        <label>Artwork Status</label>
-        <select name="artwork">
-          <option value="">&mdash; Select artwork status &mdash;</option>
-          <option>I have a logo ready</option>
-          <option>I need help with my logo</option>
-          <option>I need a full design</option>
-          <option>Not sure yet</option>
-        </select>
-
-        <label>Anything else?</label>
-        <textarea name="message" rows="3" placeholder="Tell us about your order, deadlines, etc."></textarea>
+      <span class="err">Let us know what you need.</span>
+      <button type="button" class="toggle"><svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg><span>Add order details (optional, helps us quote faster)</span></button>
+      <div class="more" id="more">
+        <label for="state">Delivery State <small>(we focus on New England)</small></label>
+        <select id="state" name="state"><option value="">&mdash; Select delivery state &mdash;</option><option>Massachusetts</option><option>New Hampshire</option><option>Rhode Island</option><option>Connecticut</option><option>Vermont</option><option>Maine</option><option>Outside New England</option></select>
+        <label for="quantity">Estimated Quantity</label>
+        <input id="quantity" name="quantity" type="text" placeholder="e.g. 5,000 bags or 25 bundles">
+        <label for="artwork">Artwork Status</label>
+        <select id="artwork" name="artwork"><option value="">&mdash; Select artwork status &mdash;</option><option>I have a logo ready</option><option>I need help with my logo</option><option>I need a full design</option><option>Not sure yet</option></select>
+        <label for="message">Anything else?</label>
+        <textarea id="message" name="message" rows="3" placeholder="Tell us about your order, deadlines, etc."></textarea>
       </div>
-
-      <button class="prp-btn submit" type="submit">Send My Request
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
-      <p class="reassure">
-        <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        We reply within 1 business day · Free proof · No obligation
-      </p>
+      <button class="btn btn-primary submit" type="submit">Send My Request <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <p class="reassure"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> We reply within 1 business day &middot; Free proof &middot; No obligation</p>
     </form>
-
-    <aside class="prp-aside">
-      <div class="box">
-        <h3>Why request a proof?</h3>
-        <ul class="prp-why">
-          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>See your brand on real packaging <b>before you pay</b></li>
-          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Bulk pricing tailored to your volume</li>
-          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>We make your logo print-ready &mdash; free</li>
-          <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Fast New England delivery &mdash; <b>your first one is free</b></li>
-        </ul>
+    <aside class="aside">
+      <div class="box"><h3>Why request a proof?</h3><ul class="why">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> See your brand on real packaging <b>before you pay</b></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Bulk pricing tailored to your volume</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> We make your logo print-ready &mdash; free</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Fast New England delivery &mdash; <b>your first one is free</b></li>
+      </ul></div>
+      <div class="box"><h3>Talk to a human</h3>
+        <p class="who"><b>Stefan B.</b><a href="tel:9785495979">978-549-5979</a><br><a href="mailto:Stefanbej@purrappackaging.com">Stefanbej@purrappackaging.com</a></p>
+        <p class="who"><b>Manny Encarnacion</b><a href="mailto:manny.encarnacion@purrappackaging.com">manny.encarnacion@purrappackaging.com</a></p>
       </div>
-
-      <div class="box">
-        <h3>Talk to a human</h3>
-        <p class="prp-contact"><b>Stefan B.</b>
-          <a href="tel:9785495979">978-549-5979</a><br>
-          <a href="mailto:Stefanbej@purrappackaging.com">Stefanbej@purrappackaging.com</a></p>
-        <p class="prp-contact"><b>Manny Encarnacion</b>
-          <a href="mailto:manny.encarnacion@purrappackaging.com">manny.encarnacion@purrappackaging.com</a></p>
-      </div>
-
-      <div class="box soft">
-        <h3>Minimum Order Reminder</h3>
-        <p>Bag products usually start at <strong>5,000 units</strong>.</p>
-        <p>Pizza boxes start at <strong>25 bundles</strong> depending on size.</p>
-      </div>
+      <div class="box soft"><h3>Minimum order reminder</h3><p style="margin:0 0 7px">Bag products usually start at <strong>5,000 units</strong>.</p><p style="margin:0">Pizza boxes start at <strong>25 bundles</strong> depending on size.</p></div>
     </aside>
-
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+        <p>Custom-printed pizza boxes, grocery bags, handle bags, sub bags &amp; menus for New England restaurants. Your brand on every order.</p>
+        <p><a href="tel:9785495979">978-549-5979</a> &middot; <a href="mailto:manny.encarnacion@purrappackaging.com">Email us</a></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="/">Home</a></li><li><a href="/catalog">Catalog &amp; pricing</a></li>
+        <li><a href="/contact">Get a free quote</a></li><li><a href="/privacy">Privacy policy</a></li>
+      </ul></div>
+      <div><h4>Service area</h4><ul>
+        <li>Massachusetts &middot; New Hampshire</li><li>Rhode Island &middot; Connecticut</li><li>Vermont &middot; Maine</li>
+      </ul></div>
+    </div>
+    <div class="foot-fine">
+      <span>&copy; <span id="yr">2026</span> Purrap Packaging. All rights reserved.</span>
+      <span>*Free delivery applies to a new customer's first order, New England delivery only.</span>
+    </div>
   </div>
-
-  <footer class="prp-footer"><div class="wrap">
-    &copy; 2026 Purrap · <a href="/">Home</a> · <a href="/catalog">Catalog</a> · <a href="/privacy">Privacy policy</a>
-  </div>
-  <div class="wrap prp-fineprint">*Free delivery applies to a new customer's first order, New England delivery only.</div>
-  </footer>
-
-</div>
-
-<script>
-
-  function prpToggleMore(btn){
-    var m = document.getElementById('prpMore');
-    var label = btn.querySelector('span');
-    m.classList.toggle('open');
-    label.textContent = m.classList.contains('open')
-      ? 'Hide order details'
-      : 'Add order details (optional, helps us quote faster)';
-  }
-</script>
-
+</footer>
+<div class="mcta"><a class="btn call" href="tel:9785495979">Call/Text</a><a class="btn btn-primary" href="/contact">Get My Free Proof</a></div><script src="/site.js" defer></script>
 </body>
 </html>

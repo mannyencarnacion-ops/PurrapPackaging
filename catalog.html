@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Custom Packaging Catalog — 19 Products & Bulk Pricing | Purrap</title>
 <meta name="description" content="Browse all 19 custom-printed products: pizza boxes from $15/bundle, grocery bags from 7¢, handle bags, sub bags & tri-fold menus. New England delivery, free proof.">
 <link rel="canonical" href="https://purrappackaging.com/catalog">
@@ -16,243 +17,256 @@
 <meta name="twitter:description" content="Browse all 19 custom-printed products: pizza boxes from $15/bundle, grocery bags from 7¢, handle bags, sub bags & tri-fold menus. New England delivery, free proof.">
 <meta name="twitter:image" content="https://purrappackaging.com/assets/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"OfferCatalog","name":"Purrap Packaging Catalog","url":"https://purrappackaging.com/catalog",
-  "itemListElement":[
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom 10\" Pizza Box (bundle of 50)"},"price":"15.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom 12\" Pizza Box (bundle of 50)"},"price":"18.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom 14\" Pizza Box (bundle of 50)"},"price":"20.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom 16\" Pizza Box (bundle of 50)"},"price":"23.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom 18\" Pizza Box (bundle of 50)"},"price":"26.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom Party Pizza Box (bundle of 50)"},"price":"30.00","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Kraft Handle Bag 14x11x6.25"},"price":"0.25","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Brown Grocery Bag"},"price":"0.08","priceCurrency":"USD"},
-    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Custom Tri-Fold Menu"},"price":"0.09","priceCurrency":"USD"}
-  ]
-}
+{"@context":"https://schema.org","@type":"OfferCatalog","name":"Purrap Packaging Catalog","url":"https://purrappackaging.com/catalog","numberOfItems":19}
 </script>
 </head>
 <body>
-<style>
-  .prp{--ink:#161616;--accent:#e8552d;--accent-dark:#c8431f;--muted:#6b6b6b;--line:#e6e3df;--bg:#fff;--soft:#faf7f4;
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .prp *{box-sizing:border-box}
-  .prp a{color:inherit;text-decoration:none}
-  .prp img{max-width:100%;display:block}
-  .prp .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-  .prp svg{display:block}
-
-  /* Announcement bar */
-  .prp-announce{background:var(--accent);color:#fff;text-align:center;font-size:.92rem;font-weight:600;padding:9px 16px}
-  .prp-announce b{font-weight:800}
-
-  /* Header */
-  .prp-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
-  .prp-top{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1120px;margin:0 auto;padding:14px 28px}
-  .prp-brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em;color:#fff;font-size:1.18rem}
-  .prp-brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
-  .prp-brand .mark svg{width:20px;height:20px;fill:#fff}
-  .prp-brand small{display:block;font-size:.58rem;letter-spacing:.26em;color:#f0c3b2;font-weight:700;margin-top:1px}
-  .prp-right{display:flex;align-items:center;gap:22px}
-  .prp-phone{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;white-space:nowrap}
-  .prp-phone svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2}
-  .prp-phone span{display:block;font-size:.68rem;font-weight:500;color:#b9b9b9}
-  .prp-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer;transition:background .15s,transform .15s}
-  .prp-btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
-  .prp-btn svg{width:16px;height:16px;fill:currentColor}
-  .prp-nav{background:#000;border-top:1px solid #262626}
-  .prp-nav .wrap{display:flex;gap:26px;padding:11px 28px;font-size:.92rem}
-  .prp-nav a{color:#cfcfcf}
-  .prp-nav a:hover{color:#fff}
-
-  /* Page head */
-  .prp-pagehead{background:linear-gradient(180deg,var(--soft),#fff);padding:42px 0 24px}
-  .prp-pagehead h1{font-size:2.1rem;margin:0 0 8px;letter-spacing:-.01em}
-  .prp-pagehead p{color:#3a3a3a;margin:0;max-width:62ch}
-
-  /* Category nav */
-  .prp-catnav{position:sticky;top:55px;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
-  .prp-catnav .wrap{display:flex;gap:10px;padding:13px 28px;flex-wrap:wrap}
-  .prp-catnav a{font-size:.85rem;font-weight:600;color:var(--ink);border:1px solid var(--line);padding:7px 14px;border-radius:99px}
-  .prp-catnav a:hover{border-color:var(--accent);color:var(--accent)}
-
-  .prp-sec{font-size:1.4rem;margin:38px 0 4px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;scroll-margin-top:120px}
-  .prp-sec small{color:var(--muted);font-weight:500;font-size:.85rem}
-  .prp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(245px,1fr));gap:18px;margin-top:16px}
-  .prp-card{border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;background:#fff;transition:box-shadow .15s,transform .15s}
-  .prp-card:hover{box-shadow:0 16px 40px -22px rgba(0,0,0,.4);transform:translateY(-3px)}
-  .prp-card .cat{font-size:11px;letter-spacing:.09em;color:#a0a0a0;text-transform:uppercase;font-weight:700}
-  .prp-card h3{margin:5px 0 8px;font-size:1.02rem;line-height:1.3}
-  .prp-price{font-weight:800;color:var(--accent);font-size:1.12rem}
-  .prp-per{color:var(--muted);font-weight:600;font-size:.82rem}
-  .prp-moq{color:#666;font-size:.82rem;margin:5px 0 14px}
-  .prp-card .prp-btn{margin-top:auto;justify-content:center;font-size:.95rem;padding:11px 16px}
-  .prp-pop{display:inline-block;background:#fff3ee;color:var(--accent);font-size:.66rem;font-weight:700;padding:3px 9px;border-radius:99px;border:1px solid #ffd9c9;vertical-align:middle}
-
-  .prp-final{background:linear-gradient(135deg,#fff,var(--soft));border:1px solid var(--line);border-radius:18px;padding:40px;text-align:center;margin:50px 0}
-  .prp-final h2{font-size:1.7rem;margin:0 0 10px}
-  .prp-final p{color:#4a4a4a;margin:0 0 20px}
-  .prp-call{margin-top:16px;color:var(--muted);font-size:.92rem}
-  .prp-call a{color:var(--ink);font-weight:700}
-
-  .prp-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center}
-  .prp-footer a{color:var(--muted)}
-  .prp-footer a:hover{color:var(--accent)}
-  .prp-fineprint{margin-top:12px;font-size:.78rem;color:#9a9a9a}
-
-  /* Sticky mobile CTA */
-  .prp-mcta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px;background:rgba(22,22,22,.97);backdrop-filter:blur(6px)}
-  .prp-mcta a{flex:1;justify-content:center}
-  .prp-mcta .call{background:#fff;color:var(--ink)}
-
-  /* Exit-intent modal */
-  .prp-modalbg{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
-  .prp-modalbg.open{display:flex}
-  .prp-modal{background:#fff;border-radius:18px;max-width:450px;width:100%;padding:34px 30px;position:relative;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4)}
-  .prp-modal .ic{width:56px;height:56px;border-radius:14px;background:#fff3ee;display:grid;place-items:center;margin:0 auto 6px}
-  .prp-modal .ic svg{width:28px;height:28px;stroke:var(--accent);fill:none;stroke-width:1.8}
-  .prp-modal h3{font-size:1.5rem;margin:8px 0 8px}
-  .prp-modal p{color:#4a4a4a;margin:0 0 18px}
-  .prp-modal .prp-btn{width:100%;justify-content:center;font-size:1.05rem;padding:14px}
-  .prp-modal .x{position:absolute;top:12px;right:16px;border:0;background:none;font-size:1.6rem;cursor:pointer;color:#b0b0b0;line-height:1}
-  .prp-modal small{display:block;margin-top:12px;color:#a0a0a0}
-
-  @media(max-width:860px){
-    .prp-right .prp-btn{display:none}
-    .prp-nav{display:none}
-    .prp-catnav{top:55px}
-    .prp-mcta{display:flex}
-    .prp{padding-bottom:66px}
-  }
-</style>
-
-<div class="prp">
-
-  <div class="prp-announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
-
-  <header class="prp-header">
-    <div class="prp-top">
-      <a class="prp-brand" href="/">
-        <span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span>
-        <span>PURRAP<small>PACKAGING</small></span>
-      </a>
-      <div class="prp-right">
-        <a class="prp-phone" href="tel:9785495979">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span style="display:flex;flex-direction:column;line-height:1.1"><strong>Call/Text 978-549-5979</strong><span>Free proof in 1 business day</span></span>
-        </a>
-        <a class="prp-btn" href="/contact">Get My Free Proof</a>
-      </div>
+<a href="#main" class="skip">Skip to content</a>
+<div class="announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+    <nav class="nav-mid" id="nav" aria-label="Primary">
+      <a href="/">Home</a><a href="/catalog">Catalog</a><a href="/contact">Get a Quote</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:9785495979"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="txt"><strong>978-549-5979</strong><small>Free proof in 1 business day</small></span></a>
+      <a class="btn btn-primary" href="/contact">Get My Free Proof</a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
     </div>
-    <nav class="prp-nav"><div class="wrap">
-      <a href="/">Home</a>
-      <a href="/catalog">Catalog</a>
-      <a href="/contact">Get a Quote</a>
-    </div></nav>
-  </header>
-
-  <section class="prp-pagehead"><div class="wrap">
-    <h1>All Products</h1>
-    <p>Every item is custom-printed with your brand. Pick a product and request a quote &mdash; we'll send pricing and a <b>free proof within 1 business day</b>.</p>
+  </div>
+</header>
+<main id="main">
+  <section class="pagehero"><div class="wrap">
+    <p class="eyebrow">Catalog &amp; pricing</p>
+    <h1>All products, fully custom-printed.</h1>
+    <p class="lead">Every item is printed with your brand. Pick a product and request a quote &mdash; we&rsquo;ll send pricing and a free proof within 1 business day.</p>
   </div></section>
-
-  <nav class="prp-catnav"><div class="wrap">
-    <a href="#pizza">Pizza Boxes</a>
-    <a href="#grocery">Grocery Bags</a>
-    <a href="#handle">Handle Bags</a>
-    <a href="#sub">Sub Bags</a>
-    <a href="#menus">Menus</a>
+  <nav class="catnav"><div class="wrap">
+    <a href="#pizza">Pizza Boxes</a><a href="#grocery">Grocery Bags</a><a href="#handle">Handle Bags</a><a href="#sub">Sub Bags</a><a href="#menus">Menus</a>
   </div></nav>
-
-  <div class="wrap">
-
-    <h2 class="prp-sec" id="pizza">Pizza Boxes <small>per bundle (50 pcs) · Min. 25 bundles</small></h2>
-    <div class="prp-grid">
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom 10" Pizza Box</h3><div><span class="prp-price">$15.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom 12" Pizza Box <span class="prp-pop">Most popular</span></h3><div><span class="prp-price">$18.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/products/custom-12-pizza-box">View &amp; Request</a></div>
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom 14" Pizza Box</h3><div><span class="prp-price">$20.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom 16" Pizza Box</h3><div><span class="prp-price">$23.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom 18" Pizza Box</h3><div><span class="prp-price">$26.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Pizza Boxes</div><h3>Custom Party Pizza Box</h3><div><span class="prp-price">$30.00</span> <span class="prp-per">/ bundle</span></div><p class="prp-moq">Min. 25 bundles</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-    </div>
-
-    <h2 class="prp-sec" id="grocery">Brown Grocery Bags <small>per unit · Min. 5,000 units</small></h2>
-    <div class="prp-grid">
-      <div class="prp-card"><div class="cat">Grocery Bags</div><h3>Brown Grocery Bag 11" &times; 5.25" &times; 3.25"</h3><div><span class="prp-price">$0.07</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Grocery Bags</div><h3>Brown Grocery Bag 11.5" &times; 6.25" &times; 3.75"</h3><div><span class="prp-price">$0.08</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Grocery Bags</div><h3>Brown Grocery Bag 15" &times; 7" &times; 4.5"</h3><div><span class="prp-price">$0.10</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Grocery Bags</div><h3>Brown Grocery Bag 15.75" &times; 8.5" &times; 5.1"</h3><div><span class="prp-price">$0.12</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-    </div>
-
-    <h2 class="prp-sec" id="handle">Handle Bags <small>per unit · Min. 5,000 units</small></h2>
-    <div class="prp-grid">
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Kraft Handle Bag 10" &times; 8" &times; 3.25"</h3><div><span class="prp-price">$0.20</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Kraft Handle Bag 10.5" &times; 8.75" &times; 5"</h3><div><span class="prp-price">$0.21</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Kraft Handle Bag 12.5" &times; 12" &times; 7"</h3><div><span class="prp-price">$0.25</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Kraft Handle Bag 14" &times; 11" &times; 6.25"</h3><div><span class="prp-price">$0.25</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Kraft Handle Bag 15.5" &times; 12" &times; 7"</h3><div><span class="prp-price">$0.27</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Handle Bags</div><h3>Handle Bag 17.25" &times; 12" &times; 7"</h3><div><span class="prp-price">$0.28</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-    </div>
-
-    <h2 class="prp-sec" id="sub">Sub Bags <small>per unit · Min. 5,000 units</small></h2>
-    <div class="prp-grid">
-      <div class="prp-card"><div class="cat">Sub Bags</div><h3>Large Sub V-Bag</h3><div><span class="prp-price">$0.15</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-      <div class="prp-card"><div class="cat">Sub Bags</div><h3>White Grease-Resistant Sub Bag</h3><div><span class="prp-price">$0.07</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-    </div>
-
-    <h2 class="prp-sec" id="menus">Menus <small>per unit · Min. 5,000 units</small></h2>
-    <div class="prp-grid">
-      <div class="prp-card"><div class="cat">Menus</div><h3>Custom Tri-Fold Menus</h3><div><span class="prp-price">$0.09</span> <span class="prp-per">/ unit</span></div><p class="prp-moq">Min. 5,000 units</p><a class="prp-btn" href="/contact">Request a Quote</a></div>
-    </div>
-
-    <div class="prp-final">
+  <section style="padding-top:8px"><div class="wrap">
+    <h2 class="cat-sec" id="pizza">Pizza Boxes <small>per bundle (50 pcs) · Min. 25 bundles</small></h2>
+    <div class="grid grid-3"><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%2010%22%20Pizza%20Box"><img src="/assets/products/custom-10-pizza-box.jpg" alt="Custom 10&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom 10&quot; Pizza Box</h3>
+        <div><span class="price tnum">$15.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%2010%22%20Pizza%20Box">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/products/custom-12-pizza-box"><span class="pop">Most popular</span><img src="/assets/products/custom-12-pizza-box.jpg" alt="Custom 12&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom 12&quot; Pizza Box</h3>
+        <div><span class="price tnum">$18.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/products/custom-12-pizza-box">View &amp; Request</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%2014%22%20Pizza%20Box"><img src="/assets/products/custom-14-pizza-box.jpg" alt="Custom 14&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom 14&quot; Pizza Box</h3>
+        <div><span class="price tnum">$20.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%2014%22%20Pizza%20Box">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%2016%22%20Pizza%20Box"><img src="/assets/products/custom-16-pizza-box.jpg" alt="Custom 16&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom 16&quot; Pizza Box</h3>
+        <div><span class="price tnum">$23.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%2016%22%20Pizza%20Box">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%2018%22%20Pizza%20Box"><img src="/assets/products/custom-18-pizza-box.jpg" alt="Custom 18&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom 18&quot; Pizza Box</h3>
+        <div><span class="price tnum">$26.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%2018%22%20Pizza%20Box">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%20Party%20Pizza%20Box"><img src="/assets/products/party-pizza-box.jpg" alt="Custom Party Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Pizza Boxes</div>
+        <h3>Custom Party Pizza Box</h3>
+        <div><span class="price tnum">$30.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%20Party%20Pizza%20Box">Request a Quote</a>
+      </div>
+    </article></div><h2 class="cat-sec" id="grocery">Grocery Bags <small>per unit · Min. 5,000 units</small></h2>
+    <div class="grid grid-3"><article class="product reveal">
+      <a class="ph" href="/contact?product=Brown%20Grocery%20Bag%2011%22%20%C3%97%205.25%22%20%C3%97%203.25%22"><img src="/assets/products/grocery-bag-1.jpg" alt="Brown Grocery Bag 11&quot; × 5.25&quot; × 3.25&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Grocery Bags</div>
+        <h3>Brown Grocery Bag 11&quot; × 5.25&quot; × 3.25&quot;</h3>
+        <div><span class="price tnum">$0.07</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Brown%20Grocery%20Bag%2011%22%20%C3%97%205.25%22%20%C3%97%203.25%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Brown%20Grocery%20Bag%2011.5%22%20%C3%97%206.25%22%20%C3%97%203.75%22"><img src="/assets/products/grocery-bag-2.jpg" alt="Brown Grocery Bag 11.5&quot; × 6.25&quot; × 3.75&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Grocery Bags</div>
+        <h3>Brown Grocery Bag 11.5&quot; × 6.25&quot; × 3.75&quot;</h3>
+        <div><span class="price tnum">$0.08</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Brown%20Grocery%20Bag%2011.5%22%20%C3%97%206.25%22%20%C3%97%203.75%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Brown%20Grocery%20Bag%2015%22%20%C3%97%207%22%20%C3%97%204.5%22"><img src="/assets/products/grocery-bag-3.jpg" alt="Brown Grocery Bag 15&quot; × 7&quot; × 4.5&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Grocery Bags</div>
+        <h3>Brown Grocery Bag 15&quot; × 7&quot; × 4.5&quot;</h3>
+        <div><span class="price tnum">$0.10</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Brown%20Grocery%20Bag%2015%22%20%C3%97%207%22%20%C3%97%204.5%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Brown%20Grocery%20Bag%2015.75%22%20%C3%97%208.5%22%20%C3%97%205.1%22"><img src="/assets/products/grocery-bag-4.jpg" alt="Brown Grocery Bag 15.75&quot; × 8.5&quot; × 5.1&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Grocery Bags</div>
+        <h3>Brown Grocery Bag 15.75&quot; × 8.5&quot; × 5.1&quot;</h3>
+        <div><span class="price tnum">$0.12</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Brown%20Grocery%20Bag%2015.75%22%20%C3%97%208.5%22%20%C3%97%205.1%22">Request a Quote</a>
+      </div>
+    </article></div><h2 class="cat-sec" id="handle">Handle Bags <small>per unit · Min. 5,000 units</small></h2>
+    <div class="grid grid-3"><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2010%22%20%C3%97%208%22%20%C3%97%203.25%22"><img src="/assets/products/handle-bag-1.jpg" alt="Kraft Handle Bag 10&quot; × 8&quot; × 3.25&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Kraft Handle Bag 10&quot; × 8&quot; × 3.25&quot;</h3>
+        <div><span class="price tnum">$0.20</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2010%22%20%C3%97%208%22%20%C3%97%203.25%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2010.5%22%20%C3%97%208.75%22%20%C3%97%205%22"><img src="/assets/products/handle-bag-2.jpg" alt="Kraft Handle Bag 10.5&quot; × 8.75&quot; × 5&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Kraft Handle Bag 10.5&quot; × 8.75&quot; × 5&quot;</h3>
+        <div><span class="price tnum">$0.21</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2010.5%22%20%C3%97%208.75%22%20%C3%97%205%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2012.5%22%20%C3%97%2012%22%20%C3%97%207%22"><img src="/assets/products/handle-bag-3.jpg" alt="Kraft Handle Bag 12.5&quot; × 12&quot; × 7&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Kraft Handle Bag 12.5&quot; × 12&quot; × 7&quot;</h3>
+        <div><span class="price tnum">$0.25</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2012.5%22%20%C3%97%2012%22%20%C3%97%207%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2014%22%20%C3%97%2011%22%20%C3%97%206.25%22"><span class="pop">Most popular</span><img src="/assets/products/handle-bag-4.jpg" alt="Kraft Handle Bag 14&quot; × 11&quot; × 6.25&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Kraft Handle Bag 14&quot; × 11&quot; × 6.25&quot;</h3>
+        <div><span class="price tnum">$0.25</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2014%22%20%C3%97%2011%22%20%C3%97%206.25%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2015.5%22%20%C3%97%2012%22%20%C3%97%207%22"><img src="/assets/products/handle-bag-5.jpg" alt="Kraft Handle Bag 15.5&quot; × 12&quot; × 7&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Kraft Handle Bag 15.5&quot; × 12&quot; × 7&quot;</h3>
+        <div><span class="price tnum">$0.27</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2015.5%22%20%C3%97%2012%22%20%C3%97%207%22">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Handle%20Bag%2017.25%22%20%C3%97%2012%22%20%C3%97%207%22"><img src="/assets/products/handle-bag-6.jpg" alt="Handle Bag 17.25&quot; × 12&quot; × 7&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Handle Bags</div>
+        <h3>Handle Bag 17.25&quot; × 12&quot; × 7&quot;</h3>
+        <div><span class="price tnum">$0.28</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Handle%20Bag%2017.25%22%20%C3%97%2012%22%20%C3%97%207%22">Request a Quote</a>
+      </div>
+    </article></div><h2 class="cat-sec" id="sub">Sub Bags <small>per unit · Min. 5,000 units</small></h2>
+    <div class="grid grid-3"><article class="product reveal">
+      <a class="ph" href="/contact?product=Large%20Sub%20V-Bag"><img src="/assets/products/large-sub-v-bag.jpg" alt="Large Sub V-Bag — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Sub Bags</div>
+        <h3>Large Sub V-Bag</h3>
+        <div><span class="price tnum">$0.15</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Large%20Sub%20V-Bag">Request a Quote</a>
+      </div>
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=White%20Grease-Resistant%20Sub%20Bag"><img src="/assets/products/white-sub-bag.jpg" alt="White Grease-Resistant Sub Bag — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Sub Bags</div>
+        <h3>White Grease-Resistant Sub Bag</h3>
+        <div><span class="price tnum">$0.07</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=White%20Grease-Resistant%20Sub%20Bag">Request a Quote</a>
+      </div>
+    </article></div><h2 class="cat-sec" id="menus">Menus <small>per unit · Min. 5,000 units</small></h2>
+    <div class="grid grid-3"><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%20Tri-Fold%20Menus"><img src="/assets/products/tri-fold-menus.jpg" alt="Custom Tri-Fold Menus — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
+        <div class="cat">Menus</div>
+        <h3>Custom Tri-Fold Menus</h3>
+        <div><span class="price tnum">$0.09</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%20Tri-Fold%20Menus">Request a Quote</a>
+      </div>
+    </article></div>
+    <div class="final reveal" style="margin-top:52px">
       <h2>Not sure which size you need?</h2>
-      <p>Tell us about your restaurant and we'll recommend the right products &mdash; with a free proof, bulk pricing, and your first delivery free.</p>
-      <a class="prp-btn" href="/contact" style="font-size:1.05rem;padding:14px 26px">Get My Free Proof
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <p class="prp-call">Or call/text <a href="tel:9785495979">978-549-5979</a></p>
+      <p>Tell us about your restaurant and we&rsquo;ll recommend the right products &mdash; with a free proof, bulk pricing, and your first delivery free.</p>
+      <a class="btn btn-primary" href="/contact">Get My Free Proof <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p style="margin-top:1.1rem;color:var(--ink-2)">Or call/text <a href="tel:9785495979">978-549-5979</a></p>
     </div>
-
-  </div>
-
-  <footer class="prp-footer"><div class="wrap">
-    &copy; 2026 Purrap · <a href="/">Home</a> · <a href="/catalog">Catalog</a> · <a href="/contact">Get a Quote</a> · <a href="/privacy">Privacy policy</a>
-  </div>
-  <div class="wrap prp-fineprint">*Free delivery applies to a new customer's first order, New England delivery only.</div>
-  </footer>
-
-  <div class="prp-mcta">
-    <a class="prp-btn call" href="tel:9785495979">Call/Text</a>
-    <a class="prp-btn" href="/contact">Get My Free Proof</a>
-  </div>
-
-  <div class="prp-modalbg" id="prpExit">
-    <div class="prp-modal">
-      <button class="x" aria-label="Close" onclick="prpCloseExit()">&times;</button>
-      <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
-      <h3>Before you go &mdash; grab a free proof</h3>
-      <p>See your logo on real packaging at no cost &mdash; and your <b>first delivery is free</b>. We'll send pricing + a free digital proof within 1 business day.</p>
-      <a class="prp-btn" href="/contact">Get My Free Proof</a>
-      <small>No obligation. New England restaurants only.</small>
+  </div></section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+        <p>Custom-printed pizza boxes, grocery bags, handle bags, sub bags &amp; menus for New England restaurants. Your brand on every order.</p>
+        <p><a href="tel:9785495979">978-549-5979</a> &middot; <a href="mailto:manny.encarnacion@purrappackaging.com">Email us</a></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="/">Home</a></li><li><a href="/catalog">Catalog &amp; pricing</a></li>
+        <li><a href="/contact">Get a free quote</a></li><li><a href="/privacy">Privacy policy</a></li>
+      </ul></div>
+      <div><h4>Service area</h4><ul>
+        <li>Massachusetts &middot; New Hampshire</li><li>Rhode Island &middot; Connecticut</li><li>Vermont &middot; Maine</li>
+      </ul></div>
+    </div>
+    <div class="foot-fine">
+      <span>&copy; <span id="yr">2026</span> Purrap Packaging. All rights reserved.</span>
+      <span>*Free delivery applies to a new customer's first order, New England delivery only.</span>
     </div>
   </div>
-
-</div>
-
-<script>
-
-  (function(){
-    var shown = sessionStorage.getItem('purrap_exit');
-    var modal = document.getElementById('prpExit');
-    function open(){ if(shown||!modal) return; modal.classList.add('open'); sessionStorage.setItem('purrap_exit','1'); shown='1'; }
-    document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY <= 0) open(); });
-    setTimeout(open, 25000);
-    window.prpCloseExit = function(){ if(modal) modal.classList.remove('open'); };
-    if(modal){ modal.addEventListener('click', function(e){ if(e.target===this) prpCloseExit(); }); }
-  })();
-</script>
-
+</footer>
+<div class="mcta"><a class="btn call" href="tel:9785495979">Call/Text</a><a class="btn btn-primary" href="/contact">Get My Free Proof</a></div><div class="modalbg" id="exit">
+  <div class="modal">
+    <button class="x" aria-label="Close" onclick="closeExit()">&times;</button>
+    <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+    <h3>Before you go &mdash; grab a free proof</h3>
+    <p>See your logo on real packaging at no cost &mdash; and your <b>first delivery is free</b>. Pricing + a free digital proof within 1 business day.</p>
+    <a class="btn btn-primary" href="/contact">Get My Free Proof</a>
+    <small>No obligation. New England restaurants only.</small>
+  </div>
+</div><script src="/site.js" defer></script>
 </body>
 </html>

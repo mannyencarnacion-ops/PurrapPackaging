@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Custom Pizza Boxes & Takeout Packaging in New England | Purrap Packaging</title>
 <meta name="description" content="Custom-printed pizza boxes, grocery bags, handle bags & menus for New England restaurants. Free digital proof, first delivery free, bulk pricing. Get a free quote.">
 <link rel="canonical" href="https://purrappackaging.com/">
@@ -16,318 +17,183 @@
 <meta name="twitter:description" content="Custom-printed pizza boxes, grocery bags, handle bags & menus for New England restaurants. Free digital proof, first delivery free, bulk pricing. Get a free quote.">
 <meta name="twitter:image" content="https://purrappackaging.com/assets/og-image.jpg">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org","@type":"Store","name":"Purrap Packaging",
-  "image":"https://purrappackaging.com/assets/og-image.jpg","url":"https://purrappackaging.com","telephone":"+1-978-549-5979","priceRange":"$$",
-  "description":"Custom-printed restaurant packaging \u2014 pizza boxes, grocery bags, handle bags, sub bags and menus \u2014 for New England kitchens.",
-  "areaServed":["Massachusetts","New Hampshire","Rhode Island","Connecticut","Vermont","Maine"],
-  "email":"manny.encarnacion@purrappackaging.com"
-}
+{"@context":"https://schema.org","@type":"Store","name":"Purrap Packaging","image":"https://purrappackaging.com/assets/og-image.jpg","url":"https://purrappackaging.com","telephone":"+1-978-549-5979","priceRange":"$$","email":"manny.encarnacion@purrappackaging.com","description":"Custom-printed restaurant packaging — pizza boxes, grocery bags, handle bags, sub bags and menus — for New England kitchens.","areaServed":["Massachusetts","New Hampshire","Rhode Island","Connecticut","Vermont","Maine"]}
 </script>
 </head>
 <body>
-<style>
-  .prp{--ink:#161616;--accent:#e8552d;--accent-dark:#c8431f;--muted:#6b6b6b;--line:#e6e3df;--bg:#fff;--soft:#faf7f4;
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .prp *{box-sizing:border-box}
-  .prp a{color:inherit;text-decoration:none}
-  .prp img{max-width:100%;display:block}
-  .prp .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-  .prp svg{display:block}
-
-  /* Announcement bar */
-  .prp-announce{background:var(--accent);color:#fff;text-align:center;font-size:.92rem;font-weight:600;padding:9px 16px;letter-spacing:.01em}
-  .prp-announce b{font-weight:800}
-
-  /* Header */
-  .prp-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
-  .prp-top{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1120px;margin:0 auto;padding:14px 28px}
-  .prp-brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em;color:#fff;font-size:1.18rem}
-  .prp-brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
-  .prp-brand .mark svg{width:20px;height:20px;fill:#fff}
-  .prp-brand small{display:block;font-size:.58rem;letter-spacing:.26em;color:#f0c3b2;font-weight:700;margin-top:1px}
-  .prp-right{display:flex;align-items:center;gap:22px}
-  .prp-phone{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;white-space:nowrap}
-  .prp-phone svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2}
-  .prp-phone span{display:block;font-size:.68rem;font-weight:500;color:#b9b9b9;letter-spacing:.02em}
-  .prp-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:12px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer;transition:background .15s,transform .15s}
-  .prp-btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
-  .prp-btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--accent);padding:10px 18px}
-  .prp-btn.ghost:hover{background:var(--accent);color:#fff}
-  .prp-btn svg{width:16px;height:16px;fill:currentColor}
-  .prp-nav{background:#000;border-top:1px solid #262626}
-  .prp-nav .wrap{display:flex;gap:26px;padding:11px 28px;font-size:.92rem}
-  .prp-nav a{color:#cfcfcf}
-  .prp-nav a:hover{color:#fff}
-
-  /* Hero */
-  .prp-hero{background:linear-gradient(180deg,var(--soft),#fff);padding:64px 0 38px}
-  .prp-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-  .prp-eyebrow{display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);color:var(--accent);font-weight:700;font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;padding:7px 14px;border-radius:99px}
-  .prp-eyebrow svg{width:13px;height:13px;fill:var(--accent)}
-  .prp-hero h1{font-size:2.85rem;line-height:1.08;margin:.4em 0 .3em;letter-spacing:-.01em}
-  .prp-hero h1 .u{color:var(--accent)}
-  .prp-lead{font-size:1.12rem;color:#3a3a3a;margin:0 0 26px;max-width:36ch}
-  .prp-ctarow{display:flex;gap:13px;flex-wrap:wrap}
-  .prp-reassure{margin:20px 0 0;color:var(--muted);font-size:.92rem;display:flex;flex-wrap:wrap;gap:6px 16px}
-  .prp-reassure b{color:var(--ink)}
-  .prp-hero-media{border-radius:18px;overflow:hidden;border:1px solid #e7d8c6;box-shadow:0 24px 60px -28px rgba(124,88,54,.5);background:linear-gradient(135deg,#f0e3d4,#e7d2bb);min-height:340px;display:grid;place-items:center}
-  .prp-hero-media img{width:100%;height:100%;object-fit:cover}
-
-  /* Trust */
-  .prp-trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
-  .prp-trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;padding:26px 28px}
-  .prp-trust .item{display:flex;gap:14px;align-items:flex-start}
-  .prp-trust .ic{flex:0 0 auto;width:42px;height:42px;border-radius:10px;background:#fff3ee;display:grid;place-items:center}
-  .prp-trust .ic svg{width:21px;height:21px;stroke:var(--accent);fill:none;stroke-width:1.9}
-  .prp-trust h4{margin:0 0 3px;font-size:1.02rem}
-  .prp-trust p{margin:0;color:var(--muted);font-size:.9rem}
-
-  /* Sections */
-  .prp-block{padding:60px 0}
-  .prp-block.soft{background:var(--soft)}
-  .prp-sec{font-size:1.85rem;margin:0 0 8px;letter-spacing:-.01em}
-  .prp-subsec{color:var(--muted);margin:0 0 32px;max-width:60ch}
-
-  .prp-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:step}
-  .prp-step{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
-  .prp-step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:36px;height:36px;border-radius:9px;background:var(--ink);color:#fff;font-weight:800;margin-bottom:14px}
-  .prp-step h4{margin:0 0 5px;font-size:1.05rem}
-  .prp-step p{margin:0;color:var(--muted);font-size:.9rem}
-
-  .prp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
-  .prp-card{border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;background:#fff;transition:box-shadow .15s,transform .15s}
-  .prp-card:hover{box-shadow:0 16px 40px -22px rgba(0,0,0,.4);transform:translateY(-3px)}
-  .prp-card .cat{font-size:11px;letter-spacing:.09em;color:#a0a0a0;text-transform:uppercase;font-weight:700}
-  .prp-card h3{margin:5px 0 8px;font-size:1.08rem;line-height:1.25}
-  .prp-price{font-weight:800;color:var(--accent);font-size:1.2rem}
-  .prp-per{color:var(--muted);font-weight:600;font-size:.84rem}
-  .prp-value{color:#4a4a4a;font-size:.9rem;margin:8px 0 16px}
-  .prp-card .prp-btn{margin-top:auto;justify-content:center}
-  .prp-viewall{display:inline-flex;align-items:center;gap:6px;margin-top:26px;color:var(--accent);font-weight:700}
-
-  /* Social proof */
-  .prp-proof{background:var(--ink);color:#fff}
-  .prp-proof .wrap{padding:56px 28px;text-align:center}
-  .prp-stars{display:inline-flex;gap:4px;margin-bottom:14px}
-  .prp-stars svg{width:22px;height:22px;fill:#ffb33e}
-  .prp-quote{font-size:1.45rem;max-width:48ch;margin:0 auto 16px;line-height:1.45;font-weight:500}
-  .prp-who{color:#b9b9b9;font-size:.95rem}
-
-  /* Final CTA */
-  .prp-final{background:linear-gradient(135deg,#fff,var(--soft));border:1px solid var(--line);border-radius:18px;padding:44px;text-align:center}
-  .prp-final h2{font-size:1.95rem;margin:0 0 10px;letter-spacing:-.01em}
-  .prp-final p{color:#4a4a4a;margin:0 0 22px}
-  .prp-call{margin-top:16px;color:var(--muted);font-size:.92rem}
-  .prp-call a{color:var(--ink);font-weight:700}
-
-  .prp-footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
-  .prp-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .prp-fineprint{margin-top:14px;font-size:.78rem;color:#9a9a9a}
-
-  /* Sticky mobile CTA */
-  .prp-mcta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px;background:rgba(22,22,22,.97);backdrop-filter:blur(6px)}
-  .prp-mcta a{flex:1;justify-content:center}
-  .prp-mcta .call{background:#fff;color:var(--ink)}
-
-  /* Exit-intent modal */
-  .prp-modalbg{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
-  .prp-modalbg.open{display:flex}
-  .prp-modal{background:#fff;border-radius:18px;max-width:450px;width:100%;padding:34px 30px;position:relative;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4)}
-  .prp-modal .ic{width:56px;height:56px;border-radius:14px;background:#fff3ee;display:grid;place-items:center;margin:0 auto 6px}
-  .prp-modal .ic svg{width:28px;height:28px;stroke:var(--accent);fill:none;stroke-width:1.8}
-  .prp-modal h3{font-size:1.5rem;margin:8px 0 8px}
-  .prp-modal p{color:#4a4a4a;margin:0 0 18px}
-  .prp-modal .prp-btn{width:100%;justify-content:center;font-size:1.05rem;padding:14px}
-  .prp-modal .x{position:absolute;top:12px;right:16px;border:0;background:none;font-size:1.6rem;cursor:pointer;color:#b0b0b0;line-height:1}
-  .prp-modal small{display:block;margin-top:12px;color:#a0a0a0}
-
-  @media(max-width:860px){
-    .prp-hero-grid{grid-template-columns:1fr;gap:30px}
-    .prp-hero h1{font-size:2.2rem}
-    .prp-trust .wrap{grid-template-columns:1fr;gap:18px}
-    .prp-steps{grid-template-columns:1fr 1fr}
-    .prp-right .prp-btn{display:none}
-    .prp-nav{display:none}
-    .prp-mcta{display:flex}
-    .prp{padding-bottom:66px}
-  }
-</style>
-
-<div class="prp">
-
-  <div class="prp-announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
-
-  <header class="prp-header">
-    <div class="prp-top">
-      <a class="prp-brand" href="/">
-        <span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span>
-        <span>PURRAP<small>PACKAGING</small></span>
-      </a>
-      <div class="prp-right">
-        <a class="prp-phone" href="tel:9785495979">
-          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span style="display:flex;flex-direction:column;line-height:1.1"><strong>Call/Text 978-549-5979</strong><span>Free proof in 1 business day</span></span>
-        </a>
-        <a class="prp-btn" href="/contact">Get My Free Proof</a>
-      </div>
+<a href="#main" class="skip">Skip to content</a>
+<div class="announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+    <nav class="nav-mid" id="nav" aria-label="Primary">
+      <a href="/">Home</a><a href="/catalog">Catalog</a><a href="/contact">Get a Quote</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-phone" href="tel:9785495979"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="txt"><strong>978-549-5979</strong><small>Free proof in 1 business day</small></span></a>
+      <a class="btn btn-primary" href="/contact">Get My Free Proof</a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
     </div>
-    <nav class="prp-nav"><div class="wrap">
-      <a href="/">Home</a>
-      <a href="/catalog">Catalog</a>
-      <a href="/contact">Get a Quote</a>
-    </div></nav>
-  </header>
-
-  <section class="prp-hero">
-    <div class="wrap prp-hero-grid">
+  </div>
+</header>
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
       <div>
-        <span class="prp-eyebrow">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
-          Serving all of New England
-        </span>
-        <h1>Custom-Printed Restaurant Packaging &mdash; <span class="u">Made for New England Kitchens</span></h1>
-        <p class="prp-lead">Pizza boxes, grocery bags, handle bags, sub bags &amp; menus &mdash; printed with your brand on every order that walks out the door.</p>
-        <div class="prp-ctarow">
-          <a class="prp-btn" href="/contact">Get My Free Proof
-            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
-          <a class="prp-btn ghost" href="/catalog">Shop All Products</a>
+        <p class="eyebrow">Serving all of New England</p>
+        <h1>Custom-printed packaging, <span class="u">made for New England kitchens.</span></h1>
+        <p class="lead">Pizza boxes, grocery bags, handle bags, sub bags &amp; menus &mdash; printed with your brand on every order that walks out the door.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact">Get My Free Proof <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="btn btn-ghost" href="/catalog">Shop all products</a>
         </div>
-        <p class="prp-reassure"><span><b>First delivery free</b></span><span><b>Free digital proof</b> before you pay</span><span><b>Bulk pricing</b></span></p>
+        <div class="hero-trust">
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> First delivery free</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Free digital proof</span>
+          <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Bulk pricing</span>
+        </div>
       </div>
-      <div class="prp-hero-media">
-        <!-- IMAGE SLOT: replace with your Shopify hero image, e.g. <img src="{{ 'hero.jpg' | asset_url }}" alt="Custom-printed pizza boxes and branded takeout bags"> -->
-        <img src="/assets/purrap-homepage-mockup.png" alt="Custom-printed pizza boxes and branded takeout bags for New England restaurants">
+      <div class="hero-media reveal">
+        <div class="frame"><img src="/assets/purrap-homepage-mockup.png" alt="Custom-printed pizza boxes and branded takeout bags for New England restaurants" width="1200" height="1000"></div>
+        <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><span><b>Free digital proof</b><span>Before you pay a dollar</span></span></div>
       </div>
     </div>
   </section>
 
-  <div class="prp-trust"><div class="wrap">
-    <div class="item">
-      <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round"/><path d="M22 4 12 14.01l-3-3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-      <div><h4>Free digital proof</h4><p>See exactly how your packaging looks before you commit a dollar.</p></div>
-    </div>
-    <div class="item">
-      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
-      <div><h4>No design? No problem.</h4><p>Send a logo &mdash; or none &mdash; and we'll make it print-ready for you.</p></div>
-    </div>
-    <div class="item">
-      <div class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
-      <div><h4>New England delivery &mdash; first one free</h4><p>Your first delivery is on us. Fast, reliable turnaround across MA, NH, RI, CT, VT &amp; ME.</p></div>
-    </div>
+  <div class="trust"><div class="wrap">
+    <div class="item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg></div><div><h4>Free digital proof</h4><p>See exactly how your packaging looks before you commit a dollar.</p></div></div>
+    <div class="item"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><circle cx="11" cy="11" r="2"/></svg></div><div><h4>No design? No problem.</h4><p>Send a logo &mdash; or none &mdash; and we&rsquo;ll make it print-ready for you.</p></div></div>
+    <div class="item"><div class="ic"><svg viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div><div><h4>New England delivery &mdash; first one free</h4><p>Fast, reliable turnaround across MA, NH, RI, CT, VT &amp; ME.</p></div></div>
   </div></div>
 
-  <section class="prp-block"><div class="wrap">
-    <h2 class="prp-sec">How It Works</h2>
-    <p class="prp-subsec">From logo to loading dock in four simple steps.</p>
-    <div class="prp-steps">
-      <div class="prp-step"><h4>Choose Your Product</h4><p>Pick the bag, box, or menu size that fits your restaurant.</p></div>
-      <div class="prp-step"><h4>Send Us Your Art</h4><p>Upload your logo &mdash; we handle the print-ready setup.</p></div>
-      <div class="prp-step"><h4>Approve Your Proof</h4><p>We send a free digital proof for sign-off before anything prints.</p></div>
-      <div class="prp-step"><h4>Delivered to Your Door</h4><p>Your custom-branded packaging ships straight to you.</p></div>
+  <section>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What we print</p>
+        <h2>Everything that carries your brand out the door.</h2>
+        <p class="lead">Five product lines, all custom-printed, all built to turn takeout into advertising.</p>
+      </div>
+      <div class="cats"><a class="cat-tile reveal" href="/catalog#pizza"><img src="/assets/products/custom-12-pizza-box.jpg" alt="Pizza Boxes" loading="lazy" width="800" height="800"><div class="lab"><b>Pizza Boxes</b><span>6 sizes</span></div></a><a class="cat-tile reveal" href="/catalog#grocery"><img src="/assets/products/grocery-bag-2.jpg" alt="Grocery Bags" loading="lazy" width="800" height="800"><div class="lab"><b>Grocery Bags</b><span>4 sizes</span></div></a><a class="cat-tile reveal" href="/catalog#handle"><img src="/assets/products/handle-bag-4.jpg" alt="Handle Bags" loading="lazy" width="800" height="800"><div class="lab"><b>Handle Bags</b><span>6 sizes</span></div></a><a class="cat-tile reveal" href="/catalog#sub"><img src="/assets/products/large-sub-v-bag.jpg" alt="Sub Bags" loading="lazy" width="800" height="800"><div class="lab"><b>Sub Bags</b><span>2 styles</span></div></a><a class="cat-tile reveal" href="/catalog#menus"><img src="/assets/products/tri-fold-menus.jpg" alt="Menus" loading="lazy" width="800" height="800"><div class="lab"><b>Menus</b><span>Tri-fold</span></div></a></div>
     </div>
-  </div></section>
+  </section>
 
-  <section class="prp-block soft"><div class="wrap">
-    <h2 class="prp-sec">Our Most Popular Items</h2>
-    <p class="prp-subsec">Every order is custom-printed with your brand. Per-unit pricing that turns takeout into advertising.</p>
-    <div class="prp-grid">
-      <div class="prp-card">
+  <section class="band-kraft">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Best sellers</p>
+        <h2>Where most kitchens start.</h2>
+      </div>
+      <div class="grid grid-4"><article class="product reveal">
+      <a class="ph" href="/products/custom-12-pizza-box"><span class="pop">Most popular</span><img src="/assets/products/custom-12-pizza-box.jpg" alt="Custom 12&quot; Pizza Box — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
         <div class="cat">Pizza Boxes</div>
-        <h3>Custom 12" Pizza Box</h3>
-        <div><span class="prp-price">$18.00</span> <span class="prp-per">/ bundle (50 pcs)</span></div>
-        <p class="prp-value">Most popular size. Sturdy corrugated build that keeps pizzas hot and your brand front-and-center.</p>
-        <a class="prp-btn" href="/contact">Request a Quote</a>
+        <h3>Custom 12&quot; Pizza Box</h3>
+        <div><span class="price tnum">$18.00</span> <span class="per">/ bundle</span></div>
+        <p class="moq">Min. 25 bundles</p>
+        <a class="btn btn-primary" href="/products/custom-12-pizza-box">View &amp; Request</a>
       </div>
-      <div class="prp-card">
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Kraft%20Handle%20Bag%2014%22%20%C3%97%2011%22%20%C3%97%206.25%22"><span class="pop">Most popular</span><img src="/assets/products/handle-bag-4.jpg" alt="Kraft Handle Bag 14&quot; × 11&quot; × 6.25&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
         <div class="cat">Handle Bags</div>
-        <h3>Kraft Handle Bag 14"&times;11"&times;6.25"</h3>
-        <div><span class="prp-price">$0.25</span> <span class="prp-per">/ unit</span></div>
-        <p class="prp-value">Wide-gusset bag that fits full meals &mdash; branded handles walk your name down the street.</p>
-        <a class="prp-btn" href="/contact">Request a Quote</a>
+        <h3>Kraft Handle Bag 14&quot; × 11&quot; × 6.25&quot;</h3>
+        <div><span class="price tnum">$0.25</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Kraft%20Handle%20Bag%2014%22%20%C3%97%2011%22%20%C3%97%206.25%22">Request a Quote</a>
       </div>
-      <div class="prp-card">
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Brown%20Grocery%20Bag%2011.5%22%20%C3%97%206.25%22%20%C3%97%203.75%22"><img src="/assets/products/grocery-bag-2.jpg" alt="Brown Grocery Bag 11.5&quot; × 6.25&quot; × 3.75&quot; — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
         <div class="cat">Grocery Bags</div>
-        <h3>Brown Grocery Bag 11.5"&times;6.25"&times;3.75"</h3>
-        <div><span class="prp-price">$0.08</span> <span class="prp-per">/ unit</span></div>
-        <p class="prp-value">Just 8&cent; to turn every deli, bakery &amp; fast-casual order into a branded impression.</p>
-        <a class="prp-btn" href="/contact">Request a Quote</a>
+        <h3>Brown Grocery Bag 11.5&quot; × 6.25&quot; × 3.75&quot;</h3>
+        <div><span class="price tnum">$0.08</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Brown%20Grocery%20Bag%2011.5%22%20%C3%97%206.25%22%20%C3%97%203.75%22">Request a Quote</a>
       </div>
-      <div class="prp-card">
+    </article><article class="product reveal">
+      <a class="ph" href="/contact?product=Custom%20Tri-Fold%20Menus"><img src="/assets/products/tri-fold-menus.jpg" alt="Custom Tri-Fold Menus — custom-printed by Purrap Packaging" loading="lazy" width="800" height="600"></a>
+      <div class="bd">
         <div class="cat">Menus</div>
         <h3>Custom Tri-Fold Menus</h3>
-        <div><span class="prp-price">$0.09</span> <span class="prp-per">/ unit</span></div>
-        <p class="prp-value">Full-color menus for takeout inserts and tables &mdash; only 9&cent; each in bulk.</p>
-        <a class="prp-btn" href="/contact">Request a Quote</a>
+        <div><span class="price tnum">$0.09</span> <span class="per">/ unit</span></div>
+        <p class="moq">Min. 5,000 units</p>
+        <a class="btn btn-primary" href="/contact?product=Custom%20Tri-Fold%20Menus">Request a Quote</a>
+      </div>
+    </article></div>
+      <p class="center" style="margin-top:2.2rem"><a class="btn btn-ghost" href="/catalog">View all 19 products <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head center reveal"><p class="eyebrow">How it works</p><h2>From logo to loading dock in four steps.</h2></div>
+      <div class="steps">
+        <div class="step reveal"><h4>Choose your product</h4><p>Pick the bag, box, or menu size that fits your restaurant.</p></div>
+        <div class="step reveal"><h4>Send us your art</h4><p>Upload your logo &mdash; we handle the print-ready setup.</p></div>
+        <div class="step reveal"><h4>Approve your proof</h4><p>We send a free digital proof for sign-off before anything prints.</p></div>
+        <div class="step reveal"><h4>Delivered to your door</h4><p>Your custom-branded packaging ships straight to you.</p></div>
       </div>
     </div>
-    <a class="prp-viewall" href="/catalog">View all 19 products
-      <svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-  </div></section>
+  </section>
 
-  <div class="prp-proof"><div class="wrap">
-    <div class="prp-stars">
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+  <section class="band-ink">
+    <div class="wrap">
+      <div class="quote reveal">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+        <blockquote>&ldquo;Purrap turned our plain takeout into a marketing machine. The free proof meant zero surprises, and the boxes showed up exactly as promised.&rdquo;</blockquote>
+        <cite>&mdash; A New England pizzeria owner</cite>
+      </div>
     </div>
-    <p class="prp-quote">"Purrap turned our plain takeout into a marketing machine. The free proof meant zero surprises, and the boxes showed up exactly as promised."</p>
-    <p class="prp-who">&mdash; A New England pizzeria owner</p>
-  </div></div>
+  </section>
 
-  <section class="prp-block"><div class="wrap">
-    <div class="prp-final">
-      <h2>Ready to Brand Your Packaging?</h2>
-      <p>Send us your logo and we'll handle the rest. Get a free proof before you commit to any order.</p>
-      <a class="prp-btn" href="/contact" style="font-size:1.1rem;padding:14px 28px">Get a Free Quote
-        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-      <p class="prp-call">Prefer to talk? Call or text <a href="tel:9785495979">978-549-5979</a></p>
+  <section>
+    <div class="wrap">
+      <div class="final reveal">
+        <p class="eyebrow">Ready when you are</p>
+        <h2>Ready to brand your packaging?</h2>
+        <p>Send us your logo and we&rsquo;ll handle the rest. Get a free proof before you commit to any order.</p>
+        <a class="btn btn-primary" href="/contact">Get a Free Quote <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <p style="margin-top:1.2rem;color:var(--ink-2)">Prefer to talk? Call or text <a href="tel:9785495979">978-549-5979</a></p>
+      </div>
     </div>
-  </div></section>
-
-  <footer class="prp-footer"><div class="wrap">
-    <div>Proudly printing for restaurants, cafés, delis &amp; markets across New England.</div>
-    <div>&copy; 2026 Purrap · <a href="/privacy">Privacy policy</a></div>
-  </div>
-  <div class="wrap prp-fineprint">*Free delivery applies to a new customer's first order, New England delivery only.</div>
-  </footer>
-
-  <div class="prp-mcta">
-    <a class="prp-btn call" href="tel:9785495979">Call/Text</a>
-    <a class="prp-btn" href="/contact">Get My Free Proof</a>
-  </div>
-
-  <div class="prp-modalbg" id="prpExit">
-    <div class="prp-modal">
-      <button class="x" aria-label="Close" onclick="prpCloseExit()">&times;</button>
-      <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
-      <h3>Before you go &mdash; grab a free proof</h3>
-      <p>Not ready to commit? See your logo on real packaging at no cost &mdash; and your <b>first delivery is free</b>. We'll send pricing + a free digital proof within 1 business day.</p>
-      <a class="prp-btn" href="/contact">Get My Free Proof</a>
-      <small>No obligation. New England restaurants only.</small>
+  </section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/"><span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span><span class="wm">PURRAP<small>PACKAGING</small></span></a>
+        <p>Custom-printed pizza boxes, grocery bags, handle bags, sub bags &amp; menus for New England restaurants. Your brand on every order.</p>
+        <p><a href="tel:9785495979">978-549-5979</a> &middot; <a href="mailto:manny.encarnacion@purrappackaging.com">Email us</a></p>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="/">Home</a></li><li><a href="/catalog">Catalog &amp; pricing</a></li>
+        <li><a href="/contact">Get a free quote</a></li><li><a href="/privacy">Privacy policy</a></li>
+      </ul></div>
+      <div><h4>Service area</h4><ul>
+        <li>Massachusetts &middot; New Hampshire</li><li>Rhode Island &middot; Connecticut</li><li>Vermont &middot; Maine</li>
+      </ul></div>
+    </div>
+    <div class="foot-fine">
+      <span>&copy; <span id="yr">2026</span> Purrap Packaging. All rights reserved.</span>
+      <span>*Free delivery applies to a new customer's first order, New England delivery only.</span>
     </div>
   </div>
-
-</div>
-
-<script>
-
-  (function(){
-    var shown = sessionStorage.getItem('purrap_exit');
-    var modal = document.getElementById('prpExit');
-    function open(){ if(shown||!modal) return; modal.classList.add('open'); sessionStorage.setItem('purrap_exit','1'); shown='1'; }
-    document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY <= 0) open(); });
-    setTimeout(open, 25000);
-    window.prpCloseExit = function(){ if(modal) modal.classList.remove('open'); };
-    if(modal){ modal.addEventListener('click', function(e){ if(e.target===this) prpCloseExit(); }); }
-  })();
-</script>
-
+</footer>
+<div class="mcta"><a class="btn call" href="tel:9785495979">Call/Text</a><a class="btn btn-primary" href="/contact">Get My Free Proof</a></div><div class="modalbg" id="exit">
+  <div class="modal">
+    <button class="x" aria-label="Close" onclick="closeExit()">&times;</button>
+    <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+    <h3>Before you go &mdash; grab a free proof</h3>
+    <p>See your logo on real packaging at no cost &mdash; and your <b>first delivery is free</b>. Pricing + a free digital proof within 1 business day.</p>
+    <a class="btn btn-primary" href="/contact">Get My Free Proof</a>
+    <small>No obligation. New England restaurants only.</small>
+  </div>
+</div><script src="/site.js" defer></script>
 </body>
 </html>
