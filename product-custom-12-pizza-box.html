@@ -1,0 +1,285 @@
+<!--
+  Purrap Packaging &mdash; PRODUCT: Custom 12" Pizza Box (Shopify Custom Liquid section)
+  HOW TO USE:
+    1. In Shopify, add a "Custom Liquid" section/block to this product's template (or a page).
+    2. Paste this entire file in.
+    3. Replace the image slot (marked "IMAGE SLOT" below) with your Shopify product image.
+  All CSS is namespaced under .prp so it won't collide with your theme.
+  SEO title/description are set in Shopify admin, not here.
+-->
+<style>
+  .prp{--ink:#161616;--accent:#e8552d;--accent-dark:#c8431f;--muted:#6b6b6b;--line:#e6e3df;--bg:#fff;--soft:#faf7f4;
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .prp *{box-sizing:border-box}
+  .prp a{color:inherit;text-decoration:none}
+  .prp img{max-width:100%;display:block}
+  .prp .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .prp svg{display:block}
+
+  /* Announcement bar */
+  .prp-announce{background:var(--accent);color:#fff;text-align:center;font-size:.92rem;font-weight:600;padding:9px 16px}
+  .prp-announce b{font-weight:800}
+
+  /* Header */
+  .prp-header{position:sticky;top:0;z-index:50;background:var(--ink);color:#fff}
+  .prp-top{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1120px;margin:0 auto;padding:14px 28px}
+  .prp-brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.02em;color:#fff;font-size:1.18rem}
+  .prp-brand .mark{width:34px;height:34px;border-radius:9px;background:var(--accent);display:grid;place-items:center}
+  .prp-brand .mark svg{width:20px;height:20px;fill:#fff}
+  .prp-brand small{display:block;font-size:.58rem;letter-spacing:.26em;color:#f0c3b2;font-weight:700;margin-top:1px}
+  .prp-right{display:flex;align-items:center;gap:22px}
+  .prp-phone{display:flex;align-items:center;gap:9px;color:#fff;font-weight:700;white-space:nowrap}
+  .prp-phone svg{width:18px;height:18px;stroke:var(--accent);fill:none;stroke-width:2}
+  .prp-phone span{display:block;font-size:.68rem;font-weight:500;color:#b9b9b9}
+  .prp-btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;padding:13px 20px;border-radius:9px;font-weight:700;border:0;cursor:pointer;font-size:1.05rem;transition:background .15s,transform .15s}
+  .prp-btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
+  .prp-btn.ghost{background:transparent;border:2px solid var(--accent);color:var(--accent);font-size:1rem;padding:11px 18px}
+  .prp-btn.ghost:hover{background:var(--accent);color:#fff}
+  .prp-btn svg{width:16px;height:16px;fill:currentColor}
+  .prp-btn.sm{font-size:.95rem;padding:11px 16px}
+  .prp-nav{background:#000;border-top:1px solid #262626}
+  .prp-nav .wrap{display:flex;gap:26px;padding:11px 28px;font-size:.92rem}
+  .prp-nav a{color:#cfcfcf}
+  .prp-nav a:hover{color:#fff}
+
+  .prp-crumb{padding:18px 0 0;color:var(--muted);font-size:.85rem}
+  .prp-crumb a:hover{color:var(--accent)}
+
+  .prp-prod{display:grid;grid-template-columns:1fr 1fr;gap:44px;padding:18px 0 14px;align-items:start}
+  .prp-gallery{border-radius:18px;overflow:hidden;border:1px solid #e7d8c6;box-shadow:0 24px 60px -28px rgba(124,88,54,.5);background:linear-gradient(135deg,#f0e3d4,#e7d2bb);min-height:360px;display:grid;place-items:center;position:sticky;top:90px}
+  .prp-gallery img{width:100%;height:100%;object-fit:cover}
+
+  .prp-pop{display:inline-flex;align-items:center;gap:6px;background:#fff3ee;color:var(--accent);font-size:.74rem;font-weight:700;padding:5px 12px;border-radius:99px;border:1px solid #ffd9c9}
+  .prp-pop svg{width:13px;height:13px;fill:var(--accent)}
+  .prp h1{font-size:2.05rem;margin:.35em 0 .2em;letter-spacing:-.01em}
+  .prp-priceline{display:flex;align-items:baseline;gap:10px;margin:6px 0 4px}
+  .prp-price{font-size:2rem;font-weight:800;color:var(--accent)}
+  .prp-per{color:var(--muted);font-weight:600}
+  .prp-unit{color:var(--muted);font-size:.92rem;margin:0 0 16px}
+  .prp-lead{color:#3a3a3a;margin:0 0 20px}
+  .prp-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+  .prp-badges{display:flex;gap:16px;flex-wrap:wrap;margin:6px 0 0;color:#333;font-size:.9rem}
+  .prp-badges span{display:inline-flex;align-items:center;gap:7px}
+  .prp-badges svg{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:2}
+
+  .prp-specs{border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:24px}
+  .prp-specs h3{margin:0 0 12px;font-size:1.1rem}
+  .prp-specs ul{margin:0;padding:0;list-style:none}
+  .prp-specs li{display:flex;gap:10px;align-items:flex-start;margin-bottom:9px;color:#333}
+  .prp-specs svg{flex:0 0 auto;width:17px;height:17px;stroke:var(--accent);fill:none;stroke-width:2;margin-top:3px}
+  .prp-ship{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:14px;font-size:.95rem}
+  .prp-ship b{color:var(--ink)}
+
+  .prp-block{padding:44px 0}
+  .prp-block.soft{background:var(--soft)}
+  .prp-sec{font-size:1.5rem;margin:0 0 16px}
+  .prp-faq details{border:1px solid var(--line);border-radius:11px;padding:14px 18px;margin-bottom:11px;background:#fff}
+  .prp-faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .prp-faq summary::-webkit-details-marker{display:none}
+  .prp-faq summary:after{content:"+";color:var(--accent);font-size:1.3rem;font-weight:700;line-height:1}
+  .prp-faq details[open] summary:after{content:"&ndash;"}
+  .prp-faq p{margin:12px 0 0;color:#4a4a4a}
+
+  .prp-related .prp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+  .prp-related .prp-card{border:1px solid var(--line);border-radius:13px;padding:16px;display:flex;flex-direction:column;background:#fff;transition:box-shadow .15s,transform .15s}
+  .prp-related .prp-card:hover{box-shadow:0 16px 40px -22px rgba(0,0,0,.4);transform:translateY(-3px)}
+  .prp-related .prp-card h4{margin:0 0 6px;font-size:.98rem}
+  .prp-related .prp-card .p{color:var(--accent);font-weight:800}
+  .prp-related .prp-card .p small{color:var(--muted);font-weight:600;font-size:.8rem}
+  .prp-related .prp-card a.req{margin-top:auto;color:var(--accent);font-weight:700;font-size:.9rem;padding-top:10px;display:inline-flex;align-items:center;gap:5px}
+  .prp-viewall{display:inline-flex;align-items:center;gap:6px;margin-top:18px;color:var(--accent);font-weight:700}
+
+  .prp-final{background:var(--ink);color:#fff;border-radius:18px;padding:38px;text-align:center;margin:34px 0}
+  .prp-final h2{margin:0 0 10px}
+  .prp-final p{color:#cfcfcf;margin:0 0 20px}
+  .prp-final .prp-btn{background:var(--accent)}
+  .prp-final a.call{color:#fff;font-weight:700}
+
+  .prp-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem;text-align:center}
+  .prp-footer a{color:var(--muted)}
+  .prp-footer a:hover{color:var(--accent)}
+  .prp-fineprint{margin-top:12px;font-size:.78rem;color:#9a9a9a}
+
+  .prp-mcta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px;background:rgba(22,22,22,.97);backdrop-filter:blur(6px)}
+  .prp-mcta a{flex:1;justify-content:center;font-size:1rem;padding:12px}
+  .prp-mcta .call{background:#fff;color:var(--ink)}
+
+  .prp-modalbg{position:fixed;inset:0;background:rgba(0,0,0,.62);z-index:100;display:none;align-items:center;justify-content:center;padding:20px}
+  .prp-modalbg.open{display:flex}
+  .prp-modal{background:#fff;border-radius:18px;max-width:450px;width:100%;padding:34px 30px;position:relative;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+  .prp-modal .ic{width:56px;height:56px;border-radius:14px;background:#fff3ee;display:grid;place-items:center;margin:0 auto 6px}
+  .prp-modal .ic svg{width:28px;height:28px;stroke:var(--accent);fill:none;stroke-width:1.8}
+  .prp-modal h3{font-size:1.5rem;margin:8px 0 8px}
+  .prp-modal p{color:#4a4a4a;margin:0 0 18px}
+  .prp-modal .prp-btn{width:100%;justify-content:center}
+  .prp-modal .x{position:absolute;top:12px;right:16px;border:0;background:none;font-size:1.6rem;cursor:pointer;color:#b0b0b0;line-height:1}
+  .prp-modal small{display:block;margin-top:12px;color:#a0a0a0}
+
+  @media(max-width:860px){
+    .prp-prod{grid-template-columns:1fr;gap:26px}
+    .prp-gallery{position:static}
+    .prp h1{font-size:1.7rem}
+    .prp-right .prp-btn{display:none}
+    .prp-nav{display:none}
+    .prp-mcta{display:flex}
+    .prp{padding-bottom:66px}
+  }
+</style>
+
+<div class="prp">
+
+  <div class="prp-announce">New customer offer &mdash; <b>your first delivery is FREE</b></div>
+
+  <header class="prp-header">
+    <div class="prp-top">
+      <a class="prp-brand" href="/">
+        <span class="mark"><svg viewBox="0 0 24 24"><path d="M21 8a1 1 0 0 0-.92-.61H3.92A1 1 0 0 0 3 8v1.49a1 1 0 0 0 .55.89L4 10.62V19a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-8.38l.45-.24A1 1 0 0 0 21 9.5ZM15 14h-2v2a1 1 0 0 1-2 0v-2H9a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 0 2Z"/></svg></span>
+        <span>PURRAP<small>PACKAGING</small></span>
+      </a>
+      <div class="prp-right">
+        <a class="prp-phone" href="tel:9785495979">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span style="display:flex;flex-direction:column;line-height:1.1"><strong>Call/Text 978-549-5979</strong><span>Free proof in 1 business day</span></span>
+        </a>
+        <a class="prp-btn sm" href="/pages/contact">Get My Free Proof</a>
+      </div>
+    </div>
+    <nav class="prp-nav"><div class="wrap">
+      <a href="/">Home</a>
+      <a href="/collections/all">Catalog</a>
+      <a href="/pages/contact">Get a Quote</a>
+    </div></nav>
+  </header>
+
+  <div class="wrap">
+    <div class="prp-crumb"><a href="/">Home</a> &rsaquo; <a href="/collections/all">Catalog</a> &rsaquo; <a href="/collections/all#pizza">Pizza Boxes</a> &rsaquo; Custom 12" Pizza Box</div>
+
+    <div class="prp-prod">
+      <div class="prp-gallery">
+        <!-- IMAGE SLOT: replace with your Shopify product image, e.g. {{ product.featured_image | image_url: width: 800 | image_tag }} -->
+        <img src="assets/purrap-homepage-mockup.png" alt="Custom-printed 12 inch pizza box for New England pizzerias">
+      </div>
+
+      <div>
+        <span class="prp-pop">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Most popular size
+        </span>
+        <h1>Custom 12" Pizza Box</h1>
+        <div class="prp-priceline"><span class="prp-price">$18.00</span><span class="prp-per">/ bundle (50 pcs)</span></div>
+        <p class="prp-unit">That's just <b>$0.36 per box</b> &mdash; branded packaging that markets your pizzeria with every delivery.</p>
+        <p class="prp-lead">Durable, food-grade 12" boxes built to keep pizzas hot and protected while showing off your brand with high-quality custom printing.</p>
+
+        <div class="prp-ctas">
+          <a class="prp-btn" href="/pages/contact">Get My Free Proof
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="prp-btn ghost" href="tel:9785495979">Call/Text</a>
+        </div>
+
+        <div class="prp-badges">
+          <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Free digital proof</span>
+          <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Logo made print-ready</span>
+          <span><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>First delivery free</span>
+        </div>
+
+        <div class="prp-specs">
+          <h3>Details</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Size: 12"</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Sold by bundle (50 pcs)</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Minimum order: 25 bundles (1,250 pcs)</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Lead time: 6&ndash;8 weeks (plan ahead for openings &amp; busy seasons)</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Custom printing included</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Food-grade, sturdy corrugated construction</li>
+          </ul>
+        </div>
+
+        <div class="prp-ship">
+          <b>How pricing works:</b> Send your logo (or let us build one) and we'll return a free proof + exact bulk pricing within 1 business day. You only commit after you approve the proof.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="prp-block soft"><div class="wrap prp-faq">
+    <h2 class="prp-sec">Common Questions</h2>
+    <details><summary>What's the minimum order?</summary><p>25 bundles (1,250 boxes). This keeps your per-box cost low while giving you plenty of branded inventory.</p></details>
+    <details><summary>I don't have a print-ready logo &mdash; can you help?</summary><p>Yes. Send whatever you have and our team makes it print-ready at no extra charge. No logo at all? We can design one.</p></details>
+    <details><summary>How fast can I get them?</summary><p>Typical lead time is 6&ndash;8 weeks from proof approval. Tell us your deadline and we'll do our best to accommodate rush needs.</p></details>
+    <details><summary>Do you deliver to my area?</summary><p>We focus on New England &mdash; Massachusetts, New Hampshire, Rhode Island, Connecticut, Vermont, and Maine. New customers get their first delivery free.</p></details>
+    <details><summary>Can I see it before I pay?</summary><p>Always. You get a free digital proof and only commit once you're happy with how it looks.</p></details>
+  </div></section>
+
+  <section class="prp-block prp-related"><div class="wrap">
+    <h2 class="prp-sec">Other popular sizes</h2>
+    <div class="prp-grid">
+      <div class="prp-card"><h4>Custom 10" Pizza Box</h4><div class="p">$15.00 <small>/ bundle</small></div><a class="req" href="/pages/contact">Request a Quote →</a></div>
+      <div class="prp-card"><h4>Custom 14" Pizza Box</h4><div class="p">$20.00 <small>/ bundle</small></div><a class="req" href="/pages/contact">Request a Quote →</a></div>
+      <div class="prp-card"><h4>Custom 16" Pizza Box</h4><div class="p">$23.00 <small>/ bundle</small></div><a class="req" href="/pages/contact">Request a Quote →</a></div>
+      <div class="prp-card"><h4>Custom Party Pizza Box</h4><div class="p">$30.00 <small>/ bundle</small></div><a class="req" href="/pages/contact">Request a Quote →</a></div>
+    </div>
+    <a class="prp-viewall" href="/collections/all">View all 19 products
+      <svg viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div></section>
+
+  <div class="wrap">
+    <div class="prp-final">
+      <h2>Ready to brand your boxes?</h2>
+      <p>Send your logo and get a free proof + bulk pricing within 1 business day. New customers get their first delivery free. No obligation.</p>
+      <a class="prp-btn" href="/pages/contact">Get My Free Proof
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p style="margin:14px 0 0"><a class="call" href="tel:9785495979">Or call/text 978-549-5979</a></p>
+    </div>
+  </div>
+
+  <footer class="prp-footer"><div class="wrap">
+    &copy; 2026 Purrap · <a href="/">Home</a> · <a href="/collections/all">Catalog</a> · <a href="/pages/contact">Get a Quote</a> · <a href="/policies/privacy-policy">Privacy policy</a>
+  </div>
+  <div class="wrap prp-fineprint">*Free delivery applies to a new customer's first order, New England delivery only.</div>
+  </footer>
+
+  <div class="prp-mcta">
+    <a class="prp-btn call" href="tel:9785495979">Call/Text</a>
+    <a class="prp-btn" href="/pages/contact">Get My Free Proof</a>
+  </div>
+
+  <div class="prp-modalbg" id="prpExit">
+    <div class="prp-modal">
+      <button class="x" aria-label="Close" onclick="prpCloseExit()">&times;</button>
+      <div class="ic"><svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></div>
+      <h3>Before you go &mdash; grab a free proof</h3>
+      <p>See your logo on these boxes at no cost &mdash; and your <b>first delivery is free</b>. We'll send pricing + a free digital proof within 1 business day.</p>
+      <a class="prp-btn" href="/pages/contact">Get My Free Proof</a>
+      <small>No obligation. New England restaurants only.</small>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  /* LOCAL PREVIEW ONLY: map Shopify paths to local files so links work when opening the files
+     directly OR via a localhost server. Does nothing on the live store, so it's safe to leave in. */
+  (function(){
+    var isLocal = location.protocol === 'file:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if(!isLocal) return;
+    var map = {'/':'home.html','/pages/contact':'contact.html','/collections/all':'catalog.html','/products/custom-12-pizza-box':'product-custom-12-pizza-box.html'};
+    document.querySelectorAll('.prp a[href^="/"]').forEach(function(a){
+      var raw = a.getAttribute('href'), parts = raw.split('#'), path = parts[0], hash = parts[1] ? '#'+parts[1] : '';
+      if(map[path]) a.setAttribute('href', map[path]+hash);
+      else if(path.indexOf('/policies')===0) a.setAttribute('href','https://purrappackaging.com'+raw);
+    });
+  })();
+
+  (function(){
+    var shown = sessionStorage.getItem('purrap_exit');
+    var modal = document.getElementById('prpExit');
+    function open(){ if(shown||!modal) return; modal.classList.add('open'); sessionStorage.setItem('purrap_exit','1'); shown='1'; }
+    document.addEventListener('mouseout', function(e){ if(!e.relatedTarget && e.clientY <= 0) open(); });
+    setTimeout(open, 25000);
+    window.prpCloseExit = function(){ if(modal) modal.classList.remove('open'); };
+    if(modal){ modal.addEventListener('click', function(e){ if(e.target===this) prpCloseExit(); }); }
+  })();
+</script>
