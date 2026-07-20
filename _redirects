@@ -1,0 +1,10 @@
+# Preserve link equity from the old Shopify URL structure.
+/pages/contact          /contact                      301
+/pages/contact-us       /contact                      301
+/collections/all        /catalog                      301
+/collections/*          /catalog                      301
+/products/custom-12-pizza-box   /products/custom-12-pizza-box   301
+/products/*             /catalog                      301
+/policies/privacy-policy /privacy                     301
+/policies/*             /privacy                      301
+/cart                   /catalog                      301
